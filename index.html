@@ -3,27 +3,33 @@
         display: block;
         margin-left: auto;
         margin-right: auto;
-        margin-top: 10%;
-        margin-bottom: 3%;
-        width: 25%;
+        margin-top: 4%;
+        margin-bottom: 2%;
+        width: 20%;
     }
     .center-search {
         display: fixed;
         margin-right: 15%;
-        margin-left: 20%;
+        margin-left: 17%;
     }
     #search {
         font-family: Roboto, monospace;
         font-size: 15px;
         height: 38px;
-        width: 450px;
+        width: 568px;
         border-radius: 20px;
         border-width: 2px;
         border-color:black;
-        outline:none;
+        outline: none;
         background: url(/outline_search_black_24dp.png) no-repeat scroll 7px 7px;
         padding-left:30px;
     }
+    .navbar {
+        font-family:Roboto, monospace;
+        margin-left:82%;
+        
+    }
+
 </style>
 <!DOCTYPE html>
 <html>
@@ -34,12 +40,13 @@
 <meta charset="UTF-8">
 </head>
 <body>
+<nav class="navbar">Gmail</nav>
 
 <img src="googlelogocolor.png" alt="Google Logo" class="center">
 
 <form class="search-form center-search">
   <div class="search-form center-search">
-      <input type="search" name="Search" id="search">      
+      <input type="search" name="Search" id="search">
   </div>
 </form>
 
