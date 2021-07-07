@@ -1,9 +1,8 @@
 <style>
     .center{
         display: block;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 4%;
+        margin-left: 40%;
+        margin-top: 3%;
         margin-bottom: 2%;
         width: 20%;
     }
@@ -13,7 +12,7 @@
         margin-left: 17%;
     }
     #search {
-        font-family: Roboto, monospace;
+        font-family: Arial, sans-serif;
         font-size: 15px;
         height: 38px;
         width: 568px;
@@ -21,27 +20,59 @@
         border-width: 2px;
         border-color:black;
         outline: none;
-        background: url(/outline_search_black_24dp.png) no-repeat scroll 7px 7px;
+        background: url(/outline_search_black_24dp.png) no-repeat scroll 4px 6px;
         padding-left:30px;
     }
-    .navbar {
-        font-family:Roboto, monospace;
-        margin-left:82%;
+    .topbar {
+        margin-left:80%;
+        margin-top: 19px;
+        float: left;
+    }
+    .bar {
+        line-height: 24px;
+        display:inline-block;
+        vertical-align: middle;
+        color:rgba(0, 0, 0, 0.87);
+        text-decoration: none;
+        font-size: 13px;
+        font-weight: 400;
+        white-space: nowrap;
+        position:static;
+        height:60px;
+
+    }
+    .tackice {
+        position:relative;
+        padding: 4px;
+        margin-left: 10px;
+        height:30px;
+        margin-top: 9px;
         
     }
-
+    #navbar {
+        font-family: Arial, sans-serif;
+    }
 </style>
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 <title>Google Search</title>
 <meta charset="UTF-8">
 </head>
 <body>
-<nav class="navbar">Gmail</nav>
-
+    <div id="navbar">
+<div class="topbar">
+    <a class="bar" target="_blank" href="https://mail.google.com/mail/&ogbl">Gmail</a>
+    &nbsp;
+    <a class="bar" target="_blank" href="https://www.google.rs/imghp?hl=en&ogbl">Images</a>
+</div>
+<div class="tackice">
+<a href="https://workspace.google.com/" target="_blank">
+    <img src="/outline_apps_black_24dp.png" alt="Google Apps" class="tackice">
+</a>
+<a</a>
+</div>
+</div>
 <img src="googlelogocolor.png" alt="Google Logo" class="center">
 
 <form class="search-form center-search">
