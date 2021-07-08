@@ -1,4 +1,21 @@
+<!-- by : dekalde -->
+<!-- first one -->
+<!-- Google Homepage -->
 <style>
+    a:hover,
+    a:active {
+ text-decoration:underline
+    }
+    button:hover
+    button:active{
+    outline: #a3a3a3d3;
+    }
+    #set:hover {
+        text-decoration: underline;
+    }
+    body{
+        font-family: Arial, sans-serif;
+    }
     .center{
         display: block;
         margin-left: 40%;
@@ -52,11 +69,153 @@
     #navbar {
         font-family: Arial, sans-serif;
     }
+    .prijava {
+        text-decoration: none;
+        background-color: rgb(26, 115, 232);
+        color:rgba(255, 255, 255, 0.87);
+        background-clip: border-box;
+        background-attachment: scroll;
+        background-origin: padding-box;
+        background-size: auto;
+        border-bottom-color: rgba(255, 255, 255, 0.87);
+        letter-spacing: 0.25px;
+        margin-left: 8px;
+        margin-right: 8px;
+        padding-bottom: 10px;
+        padding-left: 24px;
+        padding-right: 24px;
+        padding-top: 10px;
+        text-align: center;
+        white-space: nowrap;
+        border-radius: 5px;
+        font-size:14px;
+        margin-top:0px;
+        line-height: normal;
+    }
+    .dugmici {
+        background-color: #f8f9fa96;
+        border: 1px solid #f8f9fa96;
+        border-radius: 4px;
+        color: #3c4043;
+        font-family: Arial,sans-serif;
+        font-size:14px;
+        margin: 11px 4px;
+        padding: 0 16px;
+        line-height: 27px;
+        height: 36px;
+        min-width: 54px;
+        text-align:center;
+        cursor:pointer;
+        user-select:none;
+
+    }
+    #zemlja {
+        color:rgba(0, 0, 0, 0.54);
+        padding: 15px 30px;
+        border-bottom: 1px solid #dadce0;
+        font-size: 15px;
+        
+    }
+    .kraj {
+        flex-shrink: 0;
+        box-sizing: border-box;
+        background:#f2f2f2;
+    }
+    .dole {
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 0 20px;
+        font-size:14px;
+        text-decoration: none;
+    }
+    .levastrana {
+        display:flex;
+        flex-wrap:wrap;
+        justify-content: space-between;
+        color:#70757a;
+    }
+    .about {
+        color:#70757a;
+        display:block;
+        padding:15px;
+        white-space:nowrap;
+        text-decoration: none;
+    }
+    .advertising {
+        color:#70757a;
+        display:block;
+        padding:15px;
+        white-space:nowrap;
+        text-decoration: none;
+    }
+    .business {
+        color:#70757a;
+        display:block;
+        padding:15px;
+        white-space:nowrap;
+        text-decoration: none;
+    }
+    .kakonestradi {
+        color:#70757a;
+        display:block;
+        padding:15px;
+        white-space:nowrap;
+        text-decoration: none;
+    }
+    .desnastrana {
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        color:#70757a;
+        font-size:14px;
+    }
+    .privacy {
+        color:#70757a;
+        display: block;
+        padding: 15px;
+        white-space: nowrap;
+        text-decoration: none;
+    }
+    .terms {
+        color:#70757a;
+        display: block;
+        padding: 15px;
+        white-space: nowrap;
+        text-decoration: none;  
+    }
+    .settings {
+        position:relative;
+        font-size:14px;
+    }
+    #set {
+        cursor:pointer;
+        width:100%;
+        text-align:left;
+        color: #70757a;
+        display:block;
+        padding: 15px;
+        white-space:nowrap;
+        border:none;
+        background:none;
+        margin:none;
+        font-size:14px;
+        font-family: arial,sans-serif;
+    }
+    .pp {
+        font-size: 13px;
+        color:rgb(34, 34, 34);
+        
+    }
+    #pop {
+        color:blue;
+    }
 </style>
 <!DOCTYPE html>
 <html>
 <head>
-<title>Google Search</title>
+<title>Google</title>
+<link rel="icon" href="favicon.png">
 <meta charset="UTF-8">
 </head>
 <body>
@@ -66,11 +225,14 @@
     &nbsp;
     <a class="bar" target="_blank" href="https://www.google.rs/imghp?hl=en&ogbl">Images</a>
 </div>
+<div class="drugadva">
 <div class="tackice">
 <a href="https://workspace.google.com/" target="_blank">
-    <img src="/outline_apps_black_24dp.png" alt="Google Apps" class="tackice">
-</a>
-<a</a>
+<img src="/outline_apps_black_24dp.png" alt="Google Apps" class="tackice"><!--
+ whitespace remover
+--></a>
+<a class="prijava navbar" href="https://accounts.google.com/ServiceLogin?hl=en&passive=true&continue=https://www.google.com/&ec=GAZAmgQ">Sign In</a>
+</div>
 </div>
 </div>
 <img src="googlelogocolor.png" alt="Google Logo" class="center">
@@ -81,8 +243,45 @@
   </div>
 </form>
 
+<center>
+    <button class="dugmici">Google Search</button>
+    <button class="dugmici">I'm Feeling Lucky</button>
+    <div class="pp">
+        <br>
+    Google offered in:
+    <a class="pp" id="pop" href="https://www.google.com/setprefs?sig=0_4VGVWlw07yIC85RTRW4hr_cw-oE%3D&hl=sr&source=homepage&sa=X&ved=0ahUKEwibu_-ZytDxAhX3ZxUIHVYEDBoQ2ZgBCA0">
+        српски</a>
+    <a class="pp" id="pop" href="https://www.google.com/setprefs?sig=0_4VGVWlw07yIC85RTRW4hr_cw-oE%3D&hl=sr-Latn&source=homepage&sa=X&ved=0ahUKEwibu_-ZytDxAhX3ZxUIHVYEDBoQ2ZgBCA4">
+        srpski</a>
+    </div>
+</center>
+<br>
+<br>
+<div class="kraj">
+
+<p id="zemlja">Serbia</p>
+
+<div class="dole">
+    <div class="levastrana">
+       <a class="about" href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&cad=rja&uact=8&ved=0ahUKEwibu_-ZytDxAhX3ZxUIHVYEDBoQkNQCCA8&url=https%3A%2F%2Fabout.google%2F%3Futm_source%3Dgoogle-RS%26utm_medium%3Dreferral%26utm_campaign%3Dhp-footer%26fg%3D1&usg=AOvVaw3z2yn6fX2q8Kc_C4lds6xA">
+    About</a>
+       <a class="advertising" href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&cad=rja&uact=8&ved=0ahUKEwibu_-ZytDxAhX3ZxUIHVYEDBoQkdQCCBA&url=https%3A%2F%2Fwww.google.com%2Fintl%2Fen_rs%2Fads%2F%3Fsubid%3Dww-ww-et-g-awa-a-g_hpafoot1_1!o2%26utm_source%3Dgoogle.com%26utm_medium%3Dreferral%26utm_campaign%3Dgoogle_hpafooter%26fg%3D1&usg=AOvVaw1uybNpWe78WNVPTTK7sNI1">
+    Advertising</a>
+       <a class="business" href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&cad=rja&uact=8&ved=0ahUKEwibu_-ZytDxAhX3ZxUIHVYEDBoQktQCCBE&url=https%3A%2F%2Fwww.google.com%2Fservices%2F%3Fsubid%3Dww-ww-et-g-awa-a-g_hpbfoot1_1!o2%26utm_source%3Dgoogle.com%26utm_medium%3Dreferral%26utm_campaign%3Dgoogle_hpbfooter%26fg%3D1&usg=AOvVaw2SJ4zwRVXKyZr53qG9dm4K">
+    Business</a>
+       <a class="kakonestradi" href="https://google.com/search/howsearchworks/?fg=1">How Search works</a> 
+    </div>
+
+    <div class="desnastrana">
+       <a class="privacy" href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&cad=rja&uact=8&ved=0ahUKEwibu_-ZytDxAhX3ZxUIHVYEDBoQ8awCCBI&url=https%3A%2F%2Fpolicies.google.com%2Fprivacy%3Fhl%3Den-RS%26fg%3D1&usg=AOvVaw3thaENQSGPk-Tg4xKOpdEL">
+    Privacy</a>
+       <a class="terms" href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&cad=rja&uact=8&ved=0ahUKEwibu_-ZytDxAhX3ZxUIHVYEDBoQ8qwCCBM&url=https%3A%2F%2Fpolicies.google.com%2Fterms%3Fhl%3Den-RS%26fg%3D1&usg=AOvVaw32cRWNgezZLUP8zLVulNdu">
+    Terms</a>  
+    <div class="settings">
+        <button id="set">Settings</button>
+    </div>
+    </div>
+</div>
+</div>
 </body>
-
-
-
 </html>
